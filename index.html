@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .main_body{
+        display: flex;
+      }
+      .main_right{
+        width: 10%;
+        box-shadow: 0px 0px 15px 5px gray;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+      }
+      .main_right > div:nth-child(1){
+        width: 100%;
+          border-bottom: 1px  solid rgb(206, 202, 202);
+          
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main_right > div > img {
+        width: 3em;
+        margin: 1em;
+      }
+      .main_left{
+        width: 90%;
+        height: 100vh;
+      }
+      .right_icon{
+        width: 100%;
+
+      }
+      .icon_detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        color: rgb(50, 96, 180);
+        font-weight: bold;
+      }
+      .icon_detail:hover ,.right_icon .active {
+        background-color: rgb(188, 210, 252);
+        color: black;
+        border-left: 3px solid rgb(50, 96, 180);
+      }
+      .icon_detail .fa{
+        font-size: 2em;
+      }
+      .main_left_header{
+        width: 100%;
+        height: 5em;
+      }
+      .main_left_data{
+        background-color: whitesmoke;
+        width: 100%;
+        height: 87.8vh;
+      }
+      .textvideo{
+        color: rgb(50, 96, 180);
+        font-weight: bold;
+      }
+      .textvideo .fa{
+        font-size: 18px;
+      }
+      .main_data_input > input{
+        width: 100%;
+        font-weight: 700;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+      }
+      .main_data_or{
+        display: flex;
+        justify-content: center;
+      }
+      .main_data_or > span{
+        font-weight: bold;
+      }
+      .main_data_upload{
+        width: 10em;
+        height: 10em;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_body">
+      <div class="main_right">
+        <div class="img-class">
+          <img src="ai.png" >
+        </div>
+        <div class="right_icon">
+            <div class="icon_detail">
+              <i class="fa fa-user"></i>
+              <span>Students</span>
+            </div>
+            <div class="icon_detail active">
+              <i class="fa fa-book"></i>
+              <span>Lesson Plan</span>
+            </div>
+            <div class="icon_detail">
+              <i class="fa fa-cog"></i>
+              <span>Setting</span>
+            </div>
+        </div>
+      </div>
+      <div class="main_left">
+        <div class="main_left_header">
+
+        </div>
+        <div class="main_left_data">
+            <div class="container textvideo pt-4">
+              <i class="fa fa-caret-left"></i>
+              <span>Videos</span>
+            </div>
+            <div class="container mt-5 w-75 mx-auto  main_data">
+              <div class="main_data_input">
+                <input type="text" placeholder="Insert URL here" >
+              </div>
+              <div class="main_data_or mt-4">
+                <span>or</span>
+              </div>
+              <div class="main_data_upload">
+                <span>upload</span>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
